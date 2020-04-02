@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="100dp">
+            <LinearLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/imageMateriBangunDatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/white_trapesium" />
+
+                <TextView
+                    android:id="@+id/namaMateriBangunDatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="TRAPESIUM"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/forminput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Sisi atas (a)"/>
+                <EditText
+                    android:id="@+id/editATrapesium"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:hint="Masukkan panjang a"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Sisi bawah (b)"/>
+                <EditText
+                    android:id="@+id/editBTrapesium"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:hint="Masukkan panjang b"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Tinggi"/>
+                <EditText
+                    android:id="@+id/editTinggiTrapesium"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:hint="Masukkan tinggi"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Sisi miring 1"/>
+                <EditText
+                    android:id="@+id/editS1Trapesium"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:hint="Masukkan sisi miring 1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Sisi miring 2"/>
+                <EditText
+                    android:id="@+id/editS2Trapesium"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:hint="Masukkan sisi miring 2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonGroup"
+                android:layout_below="@+id/forminput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="10dp">
+
+                <Button
+                    android:id="@+id/button_kll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00BCD4"
+                    android:onClick="HitungKllTrapesium"
+                    android:text="Hitung Keliling" />
+
+                <Button
+                    android:id="@+id/button_luas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00BCD4"
+                    android:onClick="HitungLuasTrapesium"
+                    android:text="Hitung Luas" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keliling"
+                android:layout_below="@+id/buttonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Keliling"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text=" : "/>
+                <TextView
+                    android:id="@+id/text_kll_trapesium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/luas"
+                android:layout_below="@+id/keliling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Luas"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text=" : "/>
+                <TextView
+                    android:id="@+id/text_luas_trapesium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text=""/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fabBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|left"
+        app:elevation="5dp"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

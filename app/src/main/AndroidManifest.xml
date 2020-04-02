@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ahmadhelmiyahya775.MathForFun">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.MainActivity" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.BangunDatar" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.BangunRuang" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KuisMain"/>
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.HasilKuis"/>
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.MateriBangunDatar" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.MateriBangunRuang" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorBangunDatar" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorBangunRuang" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorPersegi" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorPersegiPanjang" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorLingkaran" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorSegitigaSamaSisi" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorSegitigaSamaKaki" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorSegitigaSikuSiku" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorBelahKetupat" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorLayangLayang" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorTrapesium" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorKubus" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorBalok" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorKerucut" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorLimasSegiempat" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorLimasSegitiga" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorBola" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorPrisma" />
+        <activity android:name="org.ahmadhelmiyahya775.MathForFun.KalkulatorTabung" />
+
+    </application>
+
+</manifest>
